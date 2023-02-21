@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker Application</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="mt-5">
+        <div class="container w-75 m-auto">
+            <div class="heading">
+                <h2 class="mb-5">Bookmarker</h2>
+            </div>
+        </div>
+        <div class="container w-75 m-auto">
+            <hr>
+        </div>
+    </header>
+    <main>
+        <div class="container text-center w-75 m-auto py-5 mb-3">
+            <div class="info w-75 m-auto">
+                <div class="info-heading">
+                    <h3 class="mb-5">Bookmark your favorite sites</h3>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="sitename" class="form-label mb-4">Site Name</label>
+                        <input type="text" class="form-control" id="sitename" placeholder="Bookmark Name">
+                        <div id="sitenameerror" class="form-text alert"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="siteurl" class="form-label mb-4">Site URL</label>
+                        <input type="text" class="form-control" id="siteurl" placeholder="website URL">
+                        <div id="siteurlerror" class="form-text alert"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="container w-75 m-auto py-5 mb-3 d-none">
+            <table class="table" id="table">
+            </table>
+        </div>
+        <div class="container w-75 m-auto">
+            <hr>
+        </div>
+    </main>
+    <footer>
+        <div class="container w-75 m-auto">
+            <p>&copy; 2023 Bookmarker Inc.</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

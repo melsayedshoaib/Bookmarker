@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .container .heading h2 {
+    color: #aaa;
+    font-weight: 600;
+}
+
+main .container {
+    background-color: #eee;
+}
+
+main .container h3,
+main .container label {
+    font-weight: 600;
+}
+
+footer .container p {
+    color: #aaa;
+    font-weight: 600;
+}
